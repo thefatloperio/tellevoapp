@@ -1,0 +1,45 @@
+<ion-menu contentId="main-content">
+  <ion-header>
+    <ion-toolbar>
+      <ion-title>Bienvenido Te Llevo App</ion-title>
+    </ion-toolbar>
+  </ion-header>
+  <ion-content class="ion-padding">
+    <h1>{{user}}</h1>
+    <mat-progress-bar mode="indeterminate"></mat-progress-bar>
+    <ion-button [routerLink]="['/auto']">Conducir con Te Llevo</ion-button>
+    <br>
+    <mat-progress-bar mode="indeterminate"></mat-progress-bar>
+    <ion-button [routerLink]="['/noauto']">Viajar con Te Llevo</ion-button>
+    <mat-progress-bar mode="indeterminate"></mat-progress-bar>
+  </ion-content>
+  <ion-button (click)="cerrar()" >Cerrar Sesión</ion-button>
+</ion-menu>
+<div class="ion-page" id="main-content">
+  <ion-header>
+    <ion-toolbar color="secondary">
+      <ion-buttons slot="start">
+        <ion-menu-button></ion-menu-button>
+      </ion-buttons>
+      <ion-title>inicio</ion-title>
+    </ion-toolbar>
+  </ion-header>
+  <ion-content class="ion-padding"> 
+    <h1 style="text-align:center">Bienvenido Estudiante </h1>
+    <h1>{{user}}</h1>
+
+    <ion-card align="center">
+      <img src="https://cdn.discordapp.com/attachments/1149123407200399461/1149138895435485234/hqdefault.jpg">
+    </ion-card>
+    <h1 style="text-align:center">empleado del mes</h1>
+    <ion-card>
+      <h1 style="text-align:center">isrrael naranjo</h1>
+      <ion-card align="center">
+          <img src="https://cdn.discordapp.com/attachments/1149123407200399461/1149164456182550589/1-1.png">
+          <h1 style="text-align:center">se busca para entregarle un premio </h1>
+      </ion-card>
+      
+    </ion-card>
+     
+  </ion-content>
+</div>

@@ -1,0 +1,29 @@
+<ion-header [translucent]="true">
+  <ion-toolbar color="secondary">
+    <ion-title>recuperar contraseña</ion-title>
+    <ion-button slot="start" color="secondary">
+      <ion-back-button></ion-back-button>
+      </ion-button>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+
+  <ion-card>
+    <ion-card-header>
+      <ion-card-title>Registrarse</ion-card-title>
+    </ion-card-header>
+    <ion-card-content>
+      <form [formGroup]="formularioContra">
+        <ion-item>
+          <ion-label position="floating">correo</ion-label>
+          <ion-input formControlName="correo"></ion-input>
+        </ion-item>
+      </form>
+      <br>
+      <ion-button (click)="recuperar()">
+        Recuperar
+      </ion-button>
+    </ion-card-content>
+  </ion-card>
+</ion-content>
